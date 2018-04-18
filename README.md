@@ -2,7 +2,7 @@
 Extension of GCN to temporal data
 
 ## Contents of the Repo
------------------------
+
 Dataset/DBLP contains the labelled dataset for all the timesteps
 
 ##Links
