@@ -5,8 +5,10 @@ Extension of GCN to temporal data
 
 Dataset/DBLP contains the labelled dataset for all the timesteps
 
-##Links
--------
+## Links
+--------
 [GCN By Thomas Kipf(Tensorflow)](https://github.com/tkipf/gcn)
+
 [GCN By Thomas Kipf(Keras Implementation)](https://github.com/tkipf/keras-gcn)
+
 [STWalk Dataset](https://github.com/supriya-pandhre/STWalk)
