@@ -5,7 +5,7 @@ import pandas as pd
 
 #change accordingly
 path='/home/divya/Desktop/disciplinary2_auth_label_time.txt'
-data = pd.read_csv(path, header = None, delimiter='|')
+
 
 nums = ['04','09','14','19','24','29','34','39','44','49','54','59','64','69','74','79','84','89','94','99','104','109']
 nums_graphs = ['4','9','14','19','24','29','34','39','44','49','54','59','64','69','74','79','84','89','94','99','104','109',]
@@ -23,7 +23,7 @@ for ia in nums:
         print(len(node_to_label))
         for f in labels.readlines():
             node_num1 = f.split("|")[0]
-            node_num = int(node_num1.split("_")[0])
+            node_num = str(node_num1.split("_")[0])
             node_label = int(f.split("|")[2])
             node_to_label[node_num] = node_label
             node_to_label_1[node_num1] = node_label
@@ -40,7 +40,7 @@ for ia in nums:
         labels = open("disciplinary2_auth_label_time.txt","r")
         for f in labels.readlines():
             node_num1 = f.split("|")[0]
-            node_num = int(node_num1.split("_")[0])
+            node_num = str(node_num1.split("_")[0])
             node_label = int(f.split("|")[2])
             compare_node_to_label[node_num] = node_label
             compare_node_to_label_1[node_num1] = node_label
